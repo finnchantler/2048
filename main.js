@@ -20,15 +20,17 @@ function newGame() {
 
   let gridX = 10, gridY = 10;
 
-  let gridNumber = 1;
+  let gridNumber = 1; 
 
   for (const rows of grid) {
     for (const columns of rows) {
       ctx.fillRect(gridX, gridY, 150, 150);
-      console.log(`Current grid number ${gridNumber}\nGridX = ${gridX}\ngridY = ${gridY}`);
+
+      console.log(`Current grid number ${gridNumber}\nGridX = ${gridX}\ngridY = ${gridY}`); // just for testing, dont need this
+      
       gridX += 160;
 
-      gridNumber++;
+      gridNumber++; // just for testing
     }
     gridX = 10;
     gridY += 160;
