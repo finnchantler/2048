@@ -26,9 +26,11 @@ function newGame() {
     for (const columns of rows) {
       ctx.fillRect(gridX, gridY, 150, 150);
 
-      //console.log(`Current grid number ${gridNumber}\nGridX = ${gridX}\ngridY = ${gridY}`); // just for testing, dont need this
+      console.log(`Current grid number ${gridNumber}\nGridX = ${gridX}\ngridY = ${gridY}`); // just for testing, dont need this
       
       gridX += 160;
+
+      console.log(gridPositions);
 
       gridNumber++; // just for testing
     }
